@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PontoFixo",
+            "request": "launch",
+            "mainClass": "PontoFixo",
+            "projectName": "Métodos Numéricos"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Secante",
+            "request": "launch",
+            "mainClass": "Secante",
+            "projectName": "Métodos Numéricos"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NewtonRaphson",
+            "request": "launch",
+            "mainClass": "NewtonRaphson",
+            "projectName": "Métodos Numéricos"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RegulaFalsi",
+            "request": "launch",
+            "mainClass": "RegulaFalsi",
+            "projectName": "Métodos Numéricos"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Bissecao",
+            "request": "launch",
+            "mainClass": "Bissecao",
+            "projectName": "Métodos Numéricos"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        }
+    ]
+}

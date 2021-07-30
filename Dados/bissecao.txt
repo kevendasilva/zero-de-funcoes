@@ -1,0 +1,22 @@
+Função escolhida: f(x) = x^2 - 1
+
+Condições iniciais:
+e = 0.003 // Erro escolhido
+n = 0 // Número de iterações
+ERR = 0 // Erro Relativo Real
+a = 0 // [0, 3]
+b = 3
+xTS = 1
+
+O número de iterações foi 9 e o valor de xNS = 1.001953 .
+
+Iterações:
+Iteração 1 e o valor de ERR = 0.5000.
+Iteração 2 e o valor de ERR = 0.2500.
+Iteração 3 e o valor de ERR = 0.1250.
+Iteração 4 e o valor de ERR = 0.0625.
+Iteração 5 e o valor de ERR = 0.0313.
+Iteração 6 e o valor de ERR = 0.0156.
+Iteração 7 e o valor de ERR = 0.0078.
+Iteração 8 e o valor de ERR = 0.0039.
+Iteração 9 e o valor de ERR = 0.0020.

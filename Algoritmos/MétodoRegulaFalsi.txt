@@ -1,0 +1,52 @@
+/* Função f(x) = x^2 - 1
+ * Raiz x = 1.
+ * Onde "e" é o valor do erro máximo escolhido.
+ * ERR ou Erro Relativo Real.
+ * Os reais "a" e "b" indicam o inicio e o fim do intervalo, respectivamente, no qual
+ * a solução real para f(x) = 0 está inserido.
+ * xNS solução numérica.
+ */
+
+ Inicio algoritmo
+
+    Real: e, ERR, xNS, a, b
+    Inteiro: n
+
+    // Valores iniciais
+    e = 0.003 ou 0.3%
+    ERR = 0
+    a = 0  // [a, b] = [0, 3] // Mesmo intervalo do Método da Bisseção
+    b = 3
+    n = 0
+
+    FUNÇÃO funcao(Real: x, Inteiro: ordem)
+        // Tomando como f(x) = x^2 - 1
+        Real: f
+        Mudar (ordem) para:
+            Caso 0:
+                f = x^2 - 1
+            Caso 1:
+                f = 2 * x
+        RETORNE f
+
+    FUNÇÃO calculeERR(Real: xNS)
+        Real: ERR
+        ERR = |1 - xNS|
+        RETORNE ERR
+
+    // Considerando que f(a)f(b) < 0
+
+    FAÇA
+        xNS = (a * funcao(b, 0) - b * funcao(a, 0)) / (funcao(b, 0) - funcao(a, 0))
+        SE (funcao(a, 0) * funcao(xNS, 0) < 0) FAÇA
+            b = xNS
+        SENÃO FAÇA
+            a = xNS
+        ERR = calculeERR(xNS)
+        n = n + 1
+    // O laço continuará até que ERR seja menor ou igual que o erro "e" escolhido.
+    ENQUANTO (ERR > e)
+
+    Exiba(xNS) // Solução numérica para f(x) = 0
+
+Fim algoritmo
